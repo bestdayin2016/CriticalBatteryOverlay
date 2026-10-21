@@ -1,4 +1,4 @@
-package com.example.greygram.ui.theme
+package com.criticalbatteryoverlay.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

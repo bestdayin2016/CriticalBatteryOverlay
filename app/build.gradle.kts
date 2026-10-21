@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.greygram"
+    namespace = "com.criticalbatteryoverlay"
     compileSdk = 37
 
     defaultConfig {
-        applicationId = "com.example.greygram"
+        applicationId = "com.criticalbatteryoverlay"
         minSdk = 26
         targetSdk = 35
         versionCode = 1

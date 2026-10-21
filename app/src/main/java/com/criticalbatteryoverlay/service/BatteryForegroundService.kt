@@ -1,4 +1,4 @@
-package com.example.greygram.service
+package com.criticalbatteryoverlay.service
 
 import android.app.Notification
 import android.app.NotificationChannel
@@ -14,11 +14,11 @@ import android.os.BatteryManager
 import android.os.Build
 import android.os.IBinder
 import androidx.core.app.NotificationCompat
-import com.example.greygram.MainActivity
-import com.example.greygram.R
-import com.example.greygram.data.BatteryPreferences
-import com.example.greygram.util.PermissionUtils
-import com.example.greygram.util.RedOverlayManager
+import com.criticalbatteryoverlay.MainActivity
+import com.criticalbatteryoverlay.R
+import com.criticalbatteryoverlay.data.BatteryPreferences
+import com.criticalbatteryoverlay.util.PermissionUtils
+import com.criticalbatteryoverlay.util.RedOverlayManager
 
 class BatteryForegroundService : Service() {
 

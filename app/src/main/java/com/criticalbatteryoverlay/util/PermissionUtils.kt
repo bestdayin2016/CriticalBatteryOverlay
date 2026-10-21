@@ -1,4 +1,4 @@
-package com.example.greygram.util
+package com.criticalbatteryoverlay.util
 
 import android.Manifest
 import android.content.Context

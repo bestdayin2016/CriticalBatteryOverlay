@@ -1,4 +1,4 @@
-package com.example.greygram.data
+package com.criticalbatteryoverlay.data
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -27,7 +27,7 @@ class BatteryPreferences(context: Context) {
         }
 
     companion object {
-        private const val PREFS_NAME = "red_battery_prefs"
+        private const val PREFS_NAME = "critical_battery_prefs"
         private const val KEY_SERVICE_ENABLED = "service_enabled"
         private const val KEY_BATTERY_THRESHOLD = "battery_threshold"
         private const val KEY_OVERLAY_OPACITY = "overlay_opacity"

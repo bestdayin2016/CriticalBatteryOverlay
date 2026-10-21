@@ -1,10 +1,10 @@
-package com.example.greygram.receiver
+package com.criticalbatteryoverlay.receiver
 
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import com.example.greygram.data.BatteryPreferences
-import com.example.greygram.service.BatteryForegroundService
+import com.criticalbatteryoverlay.data.BatteryPreferences
+import com.criticalbatteryoverlay.service.BatteryForegroundService
 
 class BootCompletedReceiver : BroadcastReceiver() {
 

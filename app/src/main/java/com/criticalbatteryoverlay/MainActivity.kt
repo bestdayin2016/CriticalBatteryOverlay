@@ -1,4 +1,4 @@
-package com.example.greygram
+package com.criticalbatteryoverlay
 
 import android.Manifest
 import android.content.BroadcastReceiver
@@ -62,19 +62,19 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.greygram.data.BatteryPreferences
-import com.example.greygram.service.BatteryForegroundService
-import com.example.greygram.ui.theme.AlertRed
-import com.example.greygram.ui.theme.DarkBackground
-import com.example.greygram.ui.theme.DarkSurface
-import com.example.greygram.ui.theme.DarkSurfaceVariant
-import com.example.greygram.ui.theme.MutedGray
-import com.example.greygram.ui.theme.PureWhite
-import com.example.greygram.ui.theme.RedBatteryTheme
-import com.example.greygram.ui.theme.SuccessGreen
-import com.example.greygram.ui.theme.WarningYellow
-import com.example.greygram.util.PermissionUtils
-import com.example.greygram.util.RedOverlayManager
+import com.criticalbatteryoverlay.data.BatteryPreferences
+import com.criticalbatteryoverlay.service.BatteryForegroundService
+import com.criticalbatteryoverlay.ui.theme.AlertRed
+import com.criticalbatteryoverlay.ui.theme.CriticalBatteryTheme
+import com.criticalbatteryoverlay.ui.theme.DarkBackground
+import com.criticalbatteryoverlay.ui.theme.DarkSurface
+import com.criticalbatteryoverlay.ui.theme.DarkSurfaceVariant
+import com.criticalbatteryoverlay.ui.theme.MutedGray
+import com.criticalbatteryoverlay.ui.theme.PureWhite
+import com.criticalbatteryoverlay.ui.theme.SuccessGreen
+import com.criticalbatteryoverlay.ui.theme.WarningYellow
+import com.criticalbatteryoverlay.util.PermissionUtils
+import com.criticalbatteryoverlay.util.RedOverlayManager
 import kotlin.math.roundToInt
 
 class MainActivity : ComponentActivity() {
@@ -94,7 +94,7 @@ class MainActivity : ComponentActivity() {
         }
 
         setContent {
-            RedBatteryTheme {
+            CriticalBatteryTheme {
                 MainScreen(
                     preferences = preferences,
                     canDrawOverlays = canDrawOverlaysState.value,
@@ -209,7 +209,7 @@ fun MainScreen(
                 title = {
                     Column {
                         Text(
-                            text = "CriticalBattery",
+                            text = "CriticalBatteryOverlay",
                             fontWeight = FontWeight.Bold,
                             fontSize = 20.sp,
                             color = PureWhite

@@ -1,4 +1,4 @@
-package com.example.greygram.util
+package com.criticalbatteryoverlay.util
 
 import android.content.Context
 import android.graphics.Color

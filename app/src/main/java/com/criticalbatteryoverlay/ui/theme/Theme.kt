@@ -1,4 +1,4 @@
-package com.example.greygram.ui.theme
+package com.criticalbatteryoverlay.ui.theme
 
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Typography
@@ -20,7 +20,7 @@ private val DarkColorScheme = darkColorScheme(
 )
 
 @Composable
-fun RedBatteryTheme(
+fun CriticalBatteryTheme(
     content: @Composable () -> Unit
 ) {
     MaterialTheme(
