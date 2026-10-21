@@ -1,6 +1,6 @@
-# RedAlert Battery - Emergency Low Battery Red Overlay
+# CriticalBatteryOverlay - Emergency Low Battery Red Overlay
 
-**RedAlert Battery** is an ultra-low-power native Android app built with Kotlin and Jetpack Compose. It displays a full-screen, non-interactive, semi-transparent red overlay (`#FF0000` at ~35% default opacity) whenever your device battery drops to 5% (or a custom threshold) and the phone is not charging.
+**CriticalBatteryOverlay** is an ultra-low-power native Android app built with Kotlin and Jetpack Compose. It displays a full-screen, non-interactive, semi-transparent red overlay (`#FF0000` at ~35% default opacity) whenever your device battery drops to 5% (or a custom threshold) and the phone is not charging.
 
 ---
 
@@ -34,8 +34,8 @@ Requirements: JDK 17+, Android SDK API 35.
 
 ```bash
 # Clone repository
-git clone https://github.com/example/RedAlertBattery.git
-cd RedAlertBattery
+git clone https://github.com/bestdayin2016/CriticalBatteryOverlay.git
+cd CriticalBatteryOverlay
 
 # Build debug APK
 ./gradlew assembleDebug

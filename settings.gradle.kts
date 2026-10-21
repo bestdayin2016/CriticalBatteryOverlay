@@ -22,6 +22,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "GreyGram"
+rootProject.name = "CriticalBatteryOverlay"
 include(":app")
  
