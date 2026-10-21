@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CriticalBattery</string>
+    <string name="notification_channel_name">Battery Monitoring Service</string>
+    <string name="notification_channel_desc">Monitors battery level to display low battery red overlay when critical threshold is reached.</string>
+</resources>
