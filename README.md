@@ -15,11 +15,13 @@
 - **Android 14/15 Compliant**: Uses Foreground Service type `specialUse` with required `PROPERTY_SPECIAL_USE_FGS_SUBTYPE` property declared in `AndroidManifest.xml`.
 - **Boot Recovery**: Restarts automatically after device reboot via `RECEIVE_BOOT_COMPLETED`.
 - **Test Preview Button**: Instant 3-second red overlay test button in UI.
+- **In-App Customization**: Adjustable battery trigger threshold (1%–20%) and red overlay opacity (10%–90%).
 
 ---
 
 ## Technical Specifications
 
+- **App Package Name**: `com.criticalbatteryoverlay`
 - **Language**: Kotlin 100%
 - **UI Framework**: Jetpack Compose (Material3 Dark Theme)
 - **Minimum SDK**: API 26 (Android 8.0+)
@@ -28,8 +30,13 @@
 
 ---
 
-## How to Build
+## Download & Installation
 
+### Option 1: Direct APK Download
+Download the pre-built APK directly from GitHub Releases:
+[Download CriticalBatteryOverlay v1.0.0 APK](https://github.com/bestdayin2016/CriticalBatteryOverlay/releases/tag/v1.0.0)
+
+### Option 2: Build from Source
 Requirements: JDK 17+, Android SDK API 35.
 
 ```bash
@@ -41,12 +48,12 @@ cd CriticalBatteryOverlay
 ./gradlew assembleDebug
 
 # Output APK path:
-# app/build/outputs/apk/debug/app-debug.apk
+# CriticalBatteryOverlay.apk
 ```
 
 ---
 
-## How to Test on Android Emulator (ADB)
+## How to Test on Android Emulator or USB Device (ADB)
 
 You can easily simulate low battery and charging states on the Android Emulator or a connected USB device:
 
